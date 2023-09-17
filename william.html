@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/wrld.jpg" type="image/svg+xml">
+    <title>Tweedlex</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <div class="enter">
+        <p>Click to enter beware monkey.</p>
+    </div>
+
+    <video class="video" loop src="assets/vid.mp4"></video>
+
+    <div class="area">
+        
+        <div class="bio">William is racist and a monkey</div>
+    </div>
+
+    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const enterButton = document.querySelector(".enter");
+            const video = document.querySelector(".video");
+
+            enterButton.addEventListener("click", function() {
+                
+                enterButton.classList.add("fade-out");
+
+                video.play();
+
+                setTimeout(function() {
+                    enterButton.remove();
+                }, 200);
+            });
+        });
+    </script>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
