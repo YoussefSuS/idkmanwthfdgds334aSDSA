@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/WORLD.png" type="image/svg+xml">
+    <title>Tweedlex</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <div class="enter">
+        <p>Click to enter</p>
+    </div>
+
+    <video class="video" loop src="assets/.mp4"></video>
+
+    <div class="area">
+        <img src="assets/pfp.jpg" class="pfp">
+        <div class="bio">Coming Soon...</div>
+    </div>
+
+    <div class="socials">
+        <a target="_blank" href="https://discordapp.com/users/830030944416432159"><img src="assets/dc.svg" ></a>
+        <a target="_blank" href="https://github.com/tweedlexx"><img src="assets/gh.svg"></a>
+        <a target="_blank" href="https://twitter.com/twdlx"><img src="assets/x.svg"></a>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const enterButton = document.querySelector(".enter");
+            const video = document.querySelector(".video");
+
+            enterButton.addEventListener("click", function() {
+                
+                enterButton.classList.add("fade-out");
+
+                video.play();
+
+                setTimeout(function() {
+                    enterButton.remove();
+                }, 200);
+            });
+        });
+    </script>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
