@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
-    display: flex;    
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #070707;
     margin: 0;
     height: 100%;
-    -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
 }
 
 .enter {
@@ -61,7 +64,7 @@ video {
     border-radius: 50%;
     width: 200px;
     aspect-ratio: 1/1;
-    border: 1px solid rgba(255,255,255,.1);
+    border: 1px solid rgba(255, 255, 255, .1);
     transition: .1s ease-in-out;
 }
 
@@ -74,10 +77,11 @@ video {
     color: #fff;
     font-family: 'Poppins', sans-serif;
     padding: 20px 50px;
-    border-radius: 10px;
+    border-radius: 10px 0 0 10px;
     font-size: 18px;
     letter-spacing: 1.5px;
-    border: 1px solid rgba(255,255,255,.1);
+    border: 1px solid #292929;
+    border-width: 1px 0 1px 1px;
     text-align: center;
 }
 
@@ -99,4 +103,44 @@ video {
 
 .socials a:hover img {
     transform: scale(1.1);
+}
+
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    pointer-events: none;
+    background: url(dot.png);
+    background-size: 3px;
+}
+
+.btn {
+    background: #fff;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 0 16px 16px 0;
+    text-decoration: none;
+    text-align: center;
+    transition: .15s ease-in-out;    
+    border: 1px solid #292929;
+    border-left: 0px;
+    width: fit-content;
+    display: flex;
+    fill: #000;
+    aspect-ratio: 1/1;
+    padding: 0 16px;
+}
+
+.btn:hover {
+    background: #000;
+    fill: #fff;
+}
+
+.btn svg {
+    margin: auto;
+    height: 30px;
+}
+
+.flex {
+    display: flex;
 }
