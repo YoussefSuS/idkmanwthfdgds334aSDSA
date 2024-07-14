@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <link rel="shortcut icon" href="assets/WORLD.png" type="image/svg+xml">
+    <title>UPDATING WEBSITE...</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        body {
+            animation: gradient 5s ease-in-out infinite;
+            background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgb(148, 154, 233) 100%);
+            background-size: 200% 200%;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="socials">
+        <a target="_blank" href="https://discordapp.com/users/830030944416432159"><img src="assets/dc.svg"></a>
+        <a target="_blank" href="https://github.com/tweedlexx"><img src="assets/gh.svg"></a>
+        <a target="_blank" href="https://twitter.com/twdlx"><img src="assets/x.svg"></a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
