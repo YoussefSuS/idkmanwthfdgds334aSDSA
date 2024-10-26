@@ -9,12 +9,76 @@
     <link rel="stylesheet" href="assets/style.css">
     <style>
         body {
-            animation: gradient 5s ease-in-out infinite;
-            background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgb(148, 154, 233) 100%);
-            background-size: 200% 200%;
+            background: linear-gradient(180deg, #1a1a1a, #000000);
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif; /* Use the Poppins font */
+            margin: 0;
+            padding: 20px; /* Add some padding to the body */
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items horizontally */
+            position: relative; /* Position relative for overlay */
+            overflow: hidden; /* Prevent scrollbars */
         }
 
-        @keyframes gradient {
+        .navbar {
+            position: absolute; /* Position the navbar absolutely */
+            top: 20px; /* Distance from the top */
+            left: 20px; /* Distance from the left */
+            z-index: 1000; /* Ensure it is above other content */
+        }
+
+        .text-container {
+            display: flex; /* Use flexbox to align items in a row */
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items horizontally */
+            position: relative; /* Position relative for adjustments */
+            top: -210px; /* Adjust this value to move the text up or down */
+        }
+
+        .tweedlex {
+            font-size: 6em; /* Larger font size for "Tweedlex" */
+            margin: 0;
+            background: linear-gradient(90deg, #ff0080, #ff8c00, #ff0080); /* Gradient colors */
+            -webkit-background-clip: text; /* Clip background to text */
+            -webkit-text-fill-color: transparent; /* Make text transparent to show gradient */
+            animation: gradient-animation 6s ease infinite; /* Animation for gradient */
+            background-size: 400% 200%; /* Increase background size for smooth animation */
+            font-weight: bold; /* Make text bold */
+        }
+
+        .description {
+            font-size: 1.7em; /* Smaller font size for the description */
+            color: white; /* White color for the description */
+            margin-top: 10px; /* Space between "Tweedlex" and the description */
+            text-align: center; /* Center the description text */
+        }
+
+        .what-i-do {
+            text-align: center; /* Center the title */
+            margin-top: 50px; /* Space above the title */
+            font-size: 3em; /* Font size for "What I Do" */
+        }
+
+        .blur {
+            position: absolute; /* Position the blur overlay */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            backdrop-filter: blur(10px); /* Apply blur effect */
+            z-index: 500; /* Ensure it is above other content */
+            display: flex; /* Use flexbox to center the text */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            color: white; /* Text color */
+            font-size: 3em; /* Font size for "Coming Soon" */
+            text-align: center; /* Center the text */
+            opacity: 0.8; /* Slightly transparent */
+        }
+
+        @keyframes gradient-animation {
             0% {
                 background-position: 0% 50%;
             }
@@ -29,10 +93,19 @@
 </head>
 
 <body>
-    <div class="coming-soon-message">
-        <h1>Coming Soon!</h1>
+    <div class="navbar">
+        <a href="#top">
+            <img src="https://cdn.discordapp.com/attachments/1247766947236548609/1299741880296144897/pfp-removebg-preview.png?ex=671e4e74&is=671cfcf4&hm=955aea145b243424e2f878defb5beca2d9a5e00c0719cbf65a6230f8c16e6a7d&" alt="Logo" width="50" height="50"> <!-- Adjust the image source and size -->
+        </a>
     </div>
-
+    <div class="text-container" id="top">
+        <div class="tweedlex">Hi, I'm Tweedlex</div>
+        <div class="description">Cybersecurity analyst and Discord bot developer.</div>
+    </div>
+    
+    <div class="blur">
+        <div>Coming Soon!</div>
+    </div>
 </body>
 
 </html>
