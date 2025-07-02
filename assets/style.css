@@ -189,7 +189,3 @@ video {
     color: white;
 }
 
-/* Custom cursor style */
-body {
-    cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVR42mP8z8AIAwAB/0gD4gAAAABJRU5ErkJggg=='), auto; /* Dot cursor */
-}
